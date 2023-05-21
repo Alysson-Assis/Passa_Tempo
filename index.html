@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background-color: red;
+
+        }
+
+        .container {
+            background-color: red;
+            height: 35px;
+            width: 100%;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: bold;
+            text-align:center;
+            display: block;
+            padding: 400px 0 0 0;
+            position: relative;
+        }
+
+        .container1 {
+            background-color: rgb(255, 0, 0);
+            width: 610px;
+            position: relative;
+
+
+        }
+
+        .container2 {
+            display: inline-flex;
+            right: 0;
+
+
+
+        }
+
+
+        .button {
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 16px;
+            margin: 20px 500px 20px;
+            background-color: #ffffff;
+
+        }
+
+        .button1 {
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: flexbox;
+            font-size: 16px;
+            margin: 20px;
+            background-color: #ffffff;
+            position: relative;
+
+
+        }
+        a{text-decoration: none;}
+
+        
+    </style>
+</head>
+
+<body>
+    <div >
+        <section class="container">Aperte o Não!!</section>
+        <section style="float: left;"  class="container1">
+            <button class="button" ><a href="https://www.youtube.com/watch?v=fwzvKGZjpKI">Sim</a></button>
+        </section>
+        <section style="float: left;" class=" container2">
+            <button class="button1" onmouseover="moveButton(this)">Não</button>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        function moveButton(x) {
+            marginX = Math.floor(Math.random() * 500)
+            marginY = Math.floor(Math.random() * 500)
+
+            x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+        }
+    </script>
+</body>
+
+</html>
